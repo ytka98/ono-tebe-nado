@@ -1,1 +1,393 @@
 /* место для вашего кода */
+
+/* ОГРАНИЧИВАЕМ ШИРИНУ БЛОКА И ОТЦЕНТИРУЕМ СЕКЦИИ */
+.section-width {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 90px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+
+.header__navigation {
+	justify-self: start;
+  margin-left: 17%;
+
+}
+
+.header__navbar {
+	display: flex;
+  white-space: nowrap;
+	gap: 32px;
+	min-width: 38px;
+}
+
+.header__navbar-inside {
+	font-size: 18px;
+	font-weight: 400;
+	list-style: circle;
+}
+
+.header__navbar-inner__without-marker {
+	list-style: none;
+}
+
+.header__link {
+	text-decoration: none;
+	text-transform: lowercase;
+	border-bottom: 1px solid black;
+	padding-bottom: 1%;
+}
+
+.address__link-one {
+	width: 56%;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+}
+
+.address__link-two {
+	width: 55%;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+
+}
+
+.header__link:hover {
+	border-bottom: 0;
+	color: #124358a8;
+}
+
+.header__link_active {
+	border-bottom: none;
+}
+
+.header__logo {
+	display: block;
+	justify-self: center;
+	width: 137px;
+	margin-top: 0.5%;
+	margin-left: 0.2%;
+
+}
+
+.address {
+	max-width: 240px;
+  margin-right: 10%;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 1.35;
+	margin-bottom: 2%;
+	
+}
+
+.header__address {
+	margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+	
+}
+
+.cover::before { 
+  content: ""; /* Создание нового элемента уровня бложидарментства */
+  position: absolute; /* Позиционируем новый элемент поверх .cover */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Растяжение оверлея на весь .cover */
+  background-color: rgba(0, 0, 0, 0.6); /* Цвет и прозрачность оверлея */
+}
+
+.cover {
+	position: relative; /* Установка позиции для родительского элемента */
+	width: 100%;
+	height: 757px;
+	margin-left: 14px;
+	background-image: url("../images/cover.jpg");
+	background-size: cover;
+	background-position: 49% 75%;
+
+}
+
+.cover__title {
+	padding-top: 170px; 
+	color:aliceblue;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.cover-section {
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+/* Долго думал, как подогнать текст в кавере, что бы совпадал с макетом, нашел способ, при котором используются псевдоклассы и подогнал через относительные величины  */
+
+.cover-section:first-child {
+  margin-left: 4.6%; /* Пример отступа слева. усмотрению */
+}
+
+.cover-section:nth-child(3) {
+	margin-right: 4.55%; /* Пример отступа справа. */
+}
+
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.letter-small-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover-caption {
+	margin-top: 13%;
+	position: relative;
+	display: flex;
+	margin-left: 82px;
+  align-items: center;
+}
+
+.cover-caption-text {
+	font-size: 22px;
+	word-spacing: 18px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.cover__button {
+	position: absolute;
+	margin-left: 70%;
+	margin-bottom: 3px;
+	border: 1px solid #FFFFFF;
+	padding: 11px 32px;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.lots {
+	max-width: 1052px;
+	/*margin-left: 3.5%;
+	margin-top: 16.5%*/
+	margin: 16.5% 0 0 3.5%;
+
+
+}
+.lots__title {
+	padding: 0 0 27px 40px;
+	/*padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 27px;
+	padding-left: 40px;*/
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.lots__list {
+	display: flex;
+	gap: 26px;
+	justify-content: space-between;
+	align-content: center;
+	list-style: none;
+}
+
+.lots-cards-list-item {
+	flex-grow: 1;
+	width: 335px;
+	min-height: 563px;
+}
+
+.lots__look-more-link {
+	margin-top: 27px;
+	margin-left: 40px;
+	width: fit-content; /*Свойство width: fit-content; в CSS означает, что ширина элемента будет соответствовать размеру его содержимого. Это значит, что ширина элемента будет рассчитываться на основе ширины содержимого внутри него, и элемент расширится или сузится, чтобы идеально подогнаться под это содержимое.*/
+	display: block;
+	font-size: 20px;
+	color: #000000;
+	border-bottom: 1px solid;
+	padding-bottom: 0.2%;
+
+
+}
+
+.card::before {
+  content: ""; /* Это свойство обязательно для создания псевдоэлемента. Пустое значение "" говорит о том, что внутри псевдоэлемента не будет никакого содержимого, но сам элемент будет создан и может быть стилизован. */
+  position: absolute; /* Позиционирование относительно родителя */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Цвет и прозрачность оверлея */
+  z-index: 1; /* Убедитесь, что оверлей находится над фоном, но под текстом */
+}
+
+.card {
+	position: relative;
+	padding: 50px 40px ;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.card__title {
+	position: relative;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 117%;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+	z-index: 1; /* Чтобы поместить на передний фон текст а оверлей оставить сзади */
+
+}
+
+.card__description {
+	z-index: 1; /* Чтобы поместить на передний фон текст а оверлей оставить сзади */
+	position: relative;
+	line-height: 119.6%;;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.card-of-the-film {
+	background-image: url(../images/card-lot-01.jpg);
+}
+
+.card-of-the-book {
+	background-image: url(../images/card-lot-02.jpg);
+	
+}
+
+.card-of-the-picture {
+	background-image: url(../images/card-lot-03.jpg);
+}
+
+.about {
+	margin: 16.3% 0 0 8%;
+	display: flex;
+}
+
+.about_logotype {
+	background-color: #000000;
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	display: flex; /* Для выравнивания по центру. Без флекса картинка внтури не центруется */
+	justify-content: center;
+}
+
+.about__logotype_img {
+	align-self: center;
+	width: 62%;
+}
+
+.about__auction {
+	margin: 9.5% 0 0 6.8%;
+	/*margin-top: 9.5%;
+	margin-left: 6.8%;*/
+	width: 693px;
+	height: 449px;
+	font-size: 20px;
+}
+
+.about__title {
+	margin: 3px 0 100px 0;
+	/*margin-top: 3px;
+	margin-bottom: 100px;*/
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.about__description {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+}
+
+.about__text-one {
+	margin-top: 0.4%;
+}
+
+.address__link-three {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	padding-bottom: 0.2%;
+}
+
+.address__link-four {
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.2%;
+}
+
+.footer__link_active {
+	text-decoration: none;
+}
+
+.footer {
+	margin: 17.6% 0 0 5.8%;
+	display: flex;
+}
+
+.footer__centerbar {	
+	margin-left: 82px;
+	list-style: none;
+	text-transform: lowercase;
+	font-size: 18px;
+	text-align: center;
+}
+
+.footer__link-one {
+	border-bottom: 1px solid black;
+	padding-bottom: 0.2%;
+	text-decoration: none;
+}
+
+.footer__link-two {
+	border-bottom: 1px solid black;
+	text-decoration: none;
+}
+
+.footer__social__webs-list {
+	margin-left: 78.5%;
+	list-style: none;
+	display: flex;
+	gap: 47px;
+}
+
+.footer__social__webs-img {
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+}
