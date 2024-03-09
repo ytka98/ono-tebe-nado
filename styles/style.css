@@ -93,7 +93,7 @@
 }
 
 .cover::before { 
-  content: ""; /* Создание нового элемента уровня бложидарментства */
+  content: ""; 
   position: absolute; /* Позиционируем новый элемент поверх .cover */
   top: 0;
   left: 0;
@@ -110,7 +110,6 @@
 	background-image: url("../images/cover.jpg");
 	background-size: cover;
 	background-position: 49% 75%;
-
 }
 
 .cover__title {
@@ -275,7 +274,7 @@
 .card__description {
 	z-index: 1; /* Чтобы поместить на передний фон текст а оверлей оставить сзади */
 	position: relative;
-	line-height: 119.6%;;
+	line-height: 119.6%;
 	color: #FFFFFF;
 	font-size: 20px;
 }
