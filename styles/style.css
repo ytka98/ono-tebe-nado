@@ -1,9 +1,9 @@
-/* Ограничиваем ширину блока и отцентрируем секции */
+/* ОГРАНИЧИВАНИЕ ШИРИНЫ БЛОКА И РАСПОЛОЖЕНИЕ СЕКЦИЙ ПО ЦЕНТРУ */
 .section-width {
 	max-width: 1440px;
 	margin: 0 auto;
 }
-
+/* СТИЛЬ ШАПКИ HEADER*/
 .header {
 	padding: 90px 0;
 	display: grid;
@@ -86,7 +86,7 @@
 	flex-direction: column;
 	justify-self: end;
 }
-
+/* СТИЛЬ ОБЛОЖКИ COVER*/
 .cover::before {
 	content: "";
 	position: absolute;
@@ -179,7 +179,7 @@
 	font-size: 22px;
 	text-transform: uppercase;
 }
-
+/* СТИЛЬ ДЛЯ ЛОТОВ*/
 .lots {
 	max-width: 1052px;
 	margin: 16.5% 0 0 3.5%;
@@ -270,7 +270,7 @@
 .card-of-the-picture {
 	background-image: url(../images/card-lot-03.jpg);
 }
-
+/* СТИЛЬ СЕКЦИИ "ОБ АУКЦИОНЕ"*/
 .about {
 	margin: 16.3% 0 0 8%;
 	display: flex;
@@ -318,7 +318,7 @@
 	border-bottom: 1px solid;
 	padding-bottom: 0.2%;
 }
-
+/* СТИЛЬ ФУТЕРА*/
 .footer {
 	margin: 17.6% 0 0 5.8%;
 	display: flex;
