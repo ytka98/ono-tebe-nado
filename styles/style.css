@@ -317,6 +317,7 @@
 	padding-bottom: 0.2%;
 }
 /* СТИЛЬ ФУТЕРА*/
+
 .footer {
   margin: 16.5% 3.9% 0 5%;
   display: grid; 
@@ -325,8 +326,8 @@
 }
 
 .footer__address {
-	margin-left: 7%;
-	width: 100%;
+  margin-left: 7%;
+  width: 100%;
 }
 
 .footer__social__webs-list {
@@ -336,8 +337,8 @@
 }
 
 .footer__centerbar {
-	margin-left: -9%;
-	list-style: none;
+  margin-left: -9%;
+  list-style: none;
   text-transform: lowercase;
   font-size: 18px;
   text-align: center;
