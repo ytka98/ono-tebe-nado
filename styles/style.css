@@ -321,9 +321,7 @@
   margin: 16.5% 3.9% 0 5%;
   display: grid; 
   justify-items: center; 
-	/* центрируем по горизонтали */
   grid-template-columns: 1fr 2fr 1fr; 
-	/* три равные колонки */
 }
 
 .footer__address {
