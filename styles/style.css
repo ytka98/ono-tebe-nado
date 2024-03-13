@@ -269,7 +269,7 @@
 .card-of-the-picture {
 	background-image: url(../images/card-lot-03.jpg);
 }
-/* СТИЛЬ СЕКЦИИ "ОБ АУКЦИОНЕ"*/
+/* СТИЛЬ СЕКЦИИ "ОБ АУКЦИОНЕ" */
 .about {
 	margin: 16.6% 0 0 6.6%;
 	display: flex;
@@ -316,38 +316,38 @@
 	border-bottom: 1px solid;
 	padding-bottom: 0.2%;
 }
-/* СТИЛЬ ФУТЕРА*/
 
+/* СТИЛЬ ФУТЕРА */
 .footer {
-  margin: 16.5% 3.9% 0 5%;
-  display: grid; 
-  justify-items: center; 
-  grid-template-columns: 1fr 2fr 1fr; 
+	margin: 16.5% 3.9% 0 5%;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 2fr 1fr;
 }
 
 .footer__address {
-  margin-left: 7%;
-  width: 100%;
+	margin-left: 7%;
+	width: 100%;
 }
 
 .footer__social__webs-list {
-  list-style: none;
-  display: flex;
-  gap: 47px;
+	list-style: none;
+	display: flex;
+	gap: 47px;
 }
 
 .footer__centerbar {
-  margin-left: -9%;
-  list-style: none;
-  text-transform: lowercase;
-  font-size: 18px;
-  text-align: center;
+	margin-left: -9%;
+	list-style: none;
+	text-transform: lowercase;
+	font-size: 18px;
+	text-align: center;
 }
 
 .footer__social__webs-img {
-  justify-self: end;
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
+	justify-self: end;
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
 }
 
