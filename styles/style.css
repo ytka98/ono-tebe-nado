@@ -94,10 +94,6 @@
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
-*,*::before,*::after {
-	outline: 1px solid red
-}
-
 .cover {
 	position: relative;
 	width: 100%;
@@ -192,8 +188,8 @@
 
 .lots__list {
 	display: flex;
-	flex-wrap: 3;
-	gap: 26px;
+	flex-wrap: wrap;
+	gap: 23px;
 	justify-content: space-between;
 	align-content: center;
 	list-style: none;
